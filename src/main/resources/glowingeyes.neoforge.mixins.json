@@ -2,7 +2,6 @@
   "package": "me.andreasmelone.glowingeyes.neoforge.mixin",
   "client": [],
   "required": true,
-  "refmap": "${mod_id}.refmap.json",
   "plugin": "me.andreasmelone.glowingeyes.GlowingEyesMixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "injectors": {

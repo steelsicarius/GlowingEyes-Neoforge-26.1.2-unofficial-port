@@ -2,7 +2,6 @@
   "package": "me.andreasmelone.glowingeyes.mixin",
   "client": ["client.GpuTextureAccessor", "client.GuiGraphicsAccessor", "client.MinecraftMixin", "client.PlayerRendererMixin", "client.PlayerRenderStateMixin"],
   "required": true,
-  "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_21",
   "injectors": {
     "defaultRequire": 1
