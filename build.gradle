@@ -51,7 +51,7 @@ neoForge {
             server()
             programArgument '--nogui'
             // This server runs on port 25599 to avoid clashing with the process on 25565
-            programArguments '--port', '25599'
+            programArguments.addAll '--port', '25599'
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
