@@ -45,6 +45,12 @@ neoForge {
             client()
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+            // This machine is aarch64 and Mojang does not ship linux-arm64 natives in the
+            // client manifest, so we point LWJGL at locally extracted arm64 natives.
+            jvmArgument "-Dorg.lwjgl.librarypath=${project.file('natives-arm64')}"
+            // libopenal.so needs a newer libstdc++ than the system one, which we ship
+            // next to the natives; make the dynamic linker find it.
+            environment 'LD_LIBRARY_PATH', "${project.file('natives-arm64')}"
         }
 
         server {
