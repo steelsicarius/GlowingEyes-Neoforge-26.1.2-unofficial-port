@@ -1,5 +1,7 @@
 # Glowing Eyes — NeoForge 26.1.2
 
+Unoficial Update to Neoforge 26.1.2 of RaydanOMGr/GlowingEyes
+
 Port de **GlowingEyes** (original de AndreasMelone para NeoForge 21.11.x / MC 1.21.11)
 a **NeoForge 26.1.2.114** / **Minecraft 26.1.2** (Java 25).
 
